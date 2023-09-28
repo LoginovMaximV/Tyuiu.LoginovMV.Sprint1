@@ -14,6 +14,7 @@ namespace Tyuiu.LoginovMV.Sprint1.Task6.V5.Lib
             for (int i = 0; i < value.Length / 2; i++)
             {
                 if (value[i] != value[value.Length - i - 1]) return "";
+                if (value.Length == 1) return "";
             }
             return value;
         }
